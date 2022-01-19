@@ -4,6 +4,7 @@ export default function FormArtisan() {
   return (
     <>
       <h1 className="text-five"> Devenir Artisan @ManoMano </h1>
+
       <form className={style.createArtisanForm}>
         <h2 className={style.formTitle}>Créer votre fiche profil</h2>
 
