@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body,
 #__next {
   padding: 0;
@@ -14,16 +13,16 @@ body,
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 250, 243);
-}
+} */
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-main {
+/* main {
   flex-grow: 1;
-}
+} */
 
 header,
 footer {
@@ -61,4 +60,75 @@ h2 {
   justify-items: right;
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+:root {
+  --mainColor: #182a4b;
+  --secondaryColor: #395a7d;
+  --tertiaryColor: #3393ac;
+  --quarternaryColor: #11c2b8;
+  --accentColor: #ebf2f4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--accentColor);
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+#outlined-required-activity {
+  height: 100px;
+}
+
+#outlined-required-description {
+  height: 175px;
+}
+
+ul.control-dots {
+  z-index: 0;
+}
+
+.leaflet-popup-content-wrapper {
 }
