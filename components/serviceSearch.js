@@ -1,6 +1,7 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
+import { InputRounded } from "@mui/icons-material";
 
 const ServiceSearch = () => {
   return (
@@ -32,7 +33,10 @@ const ServiceSearch = () => {
         />
       </div>
 
-      <button className="border-2 border-gray-300 p-2 m-4">
+      <span> 0 </span>
+      <input type="range" min="0" max="50" />
+      <span> 50 km </span>
+      <button className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-three rounded-lg hover:bg-four focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Lancez la recherche
       </button>
     </div>
