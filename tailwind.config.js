@@ -1,16 +1,14 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        prim: ["inter", "cursive"],
-        round: ["Ubuntu", "cursive"],
-      },
+    fontFamily: {
+      main: ["Permanent Marker", "monospace"],
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
+
+    extend: {},
   },
+  plugins: [],
 };
