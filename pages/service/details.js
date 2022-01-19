@@ -10,39 +10,34 @@ const details = () => {
   return (
     <div>
       <div className="flex justify-around">
-        <div className="w-2/3 m-8 p-4 shadow-xl rounded-xl text-center bg-gray-50">
-          <h1> Fiche Artisan</h1>
-          <h2> Therese Tapalo</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            consectetur nunc a sapien aliquet, et.
-          </p>
+        <div className="w-2/3 m-8 p-4 flex-wrap shadow-xl rounded-xl text-center bg-gray-50">
+          <div className="mb-12">
+            <h1> Fiche Artisan</h1>
+            <h2> Therese Tapalo</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              consectetur nunc a sapien aliquet, et.
+            </p>
+          </div>
           <div className="flex  justify-around items-center w-auto m-8">
+            <div className=" w-1/3 m-2 p-4 shadow-xl rounded-xl text-center bg-gray-50">
+              <ServiceShowResult />
+            </div>
+
             <div>
               <ServiceMaps />
             </div>
-            <div>
-              <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-              </ul>
-            </div>
+          </div>
+
+          <div className="justify-center bg-gray-50 mt-24">
+            <ServicePrice />
+          </div>
+          <div className="justify-center bg-gray-50">
+            <ServiceRating />
           </div>
         </div>
-        <div className=" w-1/3 m-2 p-4 shadow-xl rounded-xl text-center bg-gray-50">
-          <ServiceShowResult />
-        </div>
       </div>
-      <div className="flex items-center flex-col">
-        <div className="w-2/3 m-8 p-4 shadow-xl rounded-xl text-center bg-gray-50">
-          <ServicePrice />
-        </div>
-        <div className="w-2/3 m-8 p-4 shadow-xl rounded-xl text-center bg-gray-50">
-          <ServiceRating />
-        </div>
-      </div>
+      <div className="flex items-center flex-col"></div>
     </div>
   );
 };
