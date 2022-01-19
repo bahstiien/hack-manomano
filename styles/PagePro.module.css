@@ -2,7 +2,6 @@
   margin: 5px auto;
   width: 90%;
   text-align: justify;
-  /* border: 4px solid var(--quarternaryColor); */
   border-radius: 1em;
   padding: 25px;
   display: flex;
@@ -31,13 +30,31 @@
   border-radius: 30%;
   overflow: hidden;
 }
-
 .containerWelcomePro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px auto;
+  margin: 15px auto;
+  width: 90%;
+  padding: 10px;
+}
+
+.questionClient {
+  font-size: 0.6em;
+}
+
+.imageLink {
+  width: 170px;
+  height: 170px;
+  cursor: pointer;
+}
+
+.containerLinkPro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 2px solid black;
   border-radius: 1em;
   width: 90%;
   height: 150px;
@@ -47,12 +64,22 @@
   font-size: 1.2em;
 }
 
+.returnPro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px auto;
+  height: 150px;
+  padding-top: 30px;
+}
+
 /* link become*/
 .linkBecomeArtisan {
   margin: 1em auto;
   color: var(--accentColor);
   min-width: 90px;
-  width: 90%;
+  width: 70%;
   background-color: var(--mainColor);
   font-size: 1rem;
   padding: 8px;
@@ -91,7 +118,7 @@
   margin: 1em auto;
   color: var(--accentColor);
   min-width: 90px;
-  width: 90%;
+  width: 70%;
   background-color: var(--secondaryColor);
   font-size: 1rem;
   padding: 8px;
