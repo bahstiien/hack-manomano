@@ -21,7 +21,9 @@ const ServicePrice = () => {
                 <h2 className="text-center font-bold uppercase mb-4">
                   Conseil en agencement
                 </h2>
-                <h3 className="text-center font-bold text-4xl mb-5">25€/H </h3>
+                <h3 className="text-center font-bold text-4xl mb-5">
+                  2 5 € / H{" "}
+                </h3>
                 <p className="text-center text-lg">
                   Je vous aide à l'agencement de votre projet{" "}
                 </p>
@@ -57,10 +59,11 @@ const ServicePrice = () => {
                 <h2 className="text-center font-bold uppercase mb-4">
                   GESTION COMPLETE
                 </h2>
-                <h3 className="text-center font-bold text-4xl mb-5">35/h</h3>
+                <h3 className="text-center font-bold text-4xl mb-5">
+                  35 € / h
+                </h3>
                 <p className="text-center text-lg">
-                  Je vous aide à la réalisation de vos travaux, de la commande à
-                  l'installation chez vous.
+                  Je vous accompagne dans la réalisation de vos travaux.
                 </p>
               </div>
               <div className="w-full">

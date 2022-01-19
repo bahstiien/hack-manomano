@@ -1,5 +1,7 @@
 import React from "react";
 import rating1 from "../public/worker/rating1.jpg";
+import beforeAfter from "../public/bathroom/beforeAfter.jpeg";
+import Image from "next/image";
 
 const ServiceRating = () => {
   return (
@@ -10,13 +12,12 @@ const ServiceRating = () => {
       <div className="flex items-start">
         <div className="flex-shrink-0">
           <div className="inline-block relative">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden">
-              <img
+            <div className="relative w-12 h-12 rounded-full overflow-hidden">
+              <Image
                 className="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover"
                 src={rating1}
                 alt="Profile picture"
               />
-              <div className="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
             </div>
           </div>
         </div>
@@ -108,7 +109,6 @@ const ServiceRating = () => {
             </div>
             <div className="flex items-center ml-4">
               <span className="text-sm">
-                {" "}
                 Experience de Mano Mano communauté
               </span>
               <div className="flex items-center ml-2">
@@ -141,7 +141,7 @@ const ServiceRating = () => {
                   <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                 </svg>
                 <svg
-                  className="w-3 h-3 fill-current text-gray-400"
+                  className="w-3 h-3 fill-current text-yellow-600"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -163,6 +163,14 @@ const ServiceRating = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur.
             </p>
+          </div>
+          <div className="flex">
+            <Image
+              src={beforeAfter}
+              width="400px"
+              height="300px"
+              alt="before"
+            />
           </div>
           <div className="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current">
             <div className="flex items-center">

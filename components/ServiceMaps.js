@@ -5,7 +5,9 @@ import Image from "next/image";
 const ServiceMaps = () => {
   return (
     <div>
-      <h1 className="text-2xl text-one font-bold mb-5">Rayon d'action</h1>
+      <h1 className="text-4xl md:text-6xl text-one font-bold mb-5">
+        Rayon d'action
+      </h1>
 
       <Image
         src={Maps}
