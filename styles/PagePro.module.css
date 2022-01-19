@@ -1,3 +1,37 @@
+.infoContainerPagePro {
+  margin: 5px auto;
+  width: 90%;
+  text-align: justify;
+  /* border: 4px solid var(--quarternaryColor); */
+  border-radius: 1em;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(/images/fond3.jpg);
+}
+.textTitlePagePro {
+  color: var(--accentColor);
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.paragraphPagePro {
+  color: var(--accentColor);
+  font-size: 1em;
+  margin: 15px auto;
+}
+.textContainerPagePro {
+  width: 60%;
+  text-align: justify;
+}
+
+.imageContainer {
+  width: 170px;
+  height: 170px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
 .containerWelcomePro {
   display: flex;
   flex-direction: column;
@@ -8,6 +42,101 @@
   width: 90%;
   height: 150px;
   margin: 15px auto;
-  background: var(--mainColor);
   color: var(--accentColor);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* link become*/
+.linkBecomeArtisan {
+  margin: 1em auto;
+  color: var(--accentColor);
+  min-width: 90px;
+  width: 90%;
+  background-color: var(--mainColor);
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.linkBecomeArtisan:hover,
+.linkBecomeArtisan:focus {
+  background-color: var(--quarternaryColor);
+  color: var(--mainColor);
+}
+.linkBecomeArtisan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accentColor),
+    transparent
+  );
+  transition: 0.5s;
+}
+.linkBecomeArtisan:hover::before {
+  left: 100%;
+}
+
+/* link personal*/
+
+.linkPersonalSpace {
+  margin: 1em auto;
+  color: var(--accentColor);
+  min-width: 90px;
+  width: 90%;
+  background-color: var(--secondaryColor);
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.linkPersonalSpace:hover,
+.linkPersonalSpace:focus {
+  background-color: var(--quarternaryColor);
+  color: var(--mainColor);
+}
+.linkPersonalSpace::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accentColor),
+    transparent
+  );
+  transition: 0.5s;
+}
+.linkPersonalSpace:hover::before {
+  left: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .imageContainer {
+    display: none;
+  }
+  .infoContainerPagePro {
+    margin: 5px auto;
+    width: 90%;
+    text-align: justify;
+
+    border-radius: 1em;
+    padding: 5px;
+  }
+  .textContainerPagePro {
+    width: 80%;
+  }
 }
