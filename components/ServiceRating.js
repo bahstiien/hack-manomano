@@ -4,6 +4,9 @@ import rating1 from "../public/worker/rating1.jpg";
 const ServiceRating = () => {
   return (
     <div>
+      <h1 className="text-4xl md:text-6xl text-one font-bold mb-5">
+        Ils m'ont fait confiance
+      </h1>
       <div className="flex items-start">
         <div className="flex-shrink-0">
           <div className="inline-block relative">

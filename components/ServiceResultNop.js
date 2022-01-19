@@ -31,15 +31,6 @@ const ServiceResult = (props) => {
                 </span>
               </p>
             </div>
-            <div className="bg-six px-3 py-1 flex items-center justify-center rounded-full text-xs font-medium text-gray-800 hidden md:block ">
-              <Image
-                src={SmallLogo}
-                width="20px"
-                height="20px"
-                classNameName="rounded-xl"
-                alt="profil"
-              />
-            </div>
           </div>
           <h3 className="font-black text-gray-800 md:text-3xl text-xl">
             {props.name}
