@@ -11,8 +11,8 @@
 }
 .textTitlePagePro {
   color: var(--accentColor);
-  font-size: 1.2em;
-  font-weight: 800;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 .paragraphPagePro {
   color: var(--accentColor);
@@ -165,5 +165,16 @@
   }
   .textContainerPagePro {
     width: 80%;
+  }
+
+  .containerWelcomePro {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkBecomeArtisan {
+    width: 100%;
+  }
+  .linkPersonalSpace {
+    width: 100%;
   }
 }
