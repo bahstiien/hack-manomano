@@ -1,3 +1,18 @@
+.titlePagePro {
+  text-align: center;
+  margin: 30px auto;
+}
+.infoContainerPagePro {
+  margin: 5px auto;
+  width: 90%;
+  text-align: justify;
+  border: 2px solid var(--tertiaryColor);
+  padding: 25px;
+}
+.paragraphPagePro {
+  color: var(--tertiaryColor);
+}
+
 .containerWelcomePro {
   display: flex;
   flex-direction: column;
@@ -10,4 +25,9 @@
   margin: 15px auto;
   background: var(--mainColor);
   color: var(--accentColor);
+  text-align: center;
+}
+
+.linkProPage {
+  font-size: 1.2em;
 }
