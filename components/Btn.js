@@ -1,9 +1,14 @@
-import Button from "@mui/material/Button";
-
-export default function BasicButtons({content}) {
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import AddIcon from '@mui/icons-material/Add';
+export default function BtnUsers({content}) {
   return (
-    <>
-      <Button variant="contained">{content}</Button>
-    </>
+    <Box sx={{ "& > :not(style)": { m: 1 } }}>
+      <Fab variant="extended" size="medium" color="primary" aria-label="add">
+        <AddIcon sx={{ mr: 1 }} />
+        {content}
+      </Fab>
+    </Box>
   );
 }
