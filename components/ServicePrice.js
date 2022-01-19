@@ -11,8 +11,8 @@ const ServicePrice = () => {
               Mes tarifs
             </h1>
             <h3 className="text-xl font-medium mb-10">
-              De l'idée à l'agencement complet de votre prestation je vous
-              assiste tout au long de votre projet
+              De l&#39;idée à l&#39;agencement complet de votre prestation je
+              vous assiste tout au long de votre projet.
             </h3>
           </div>
           <div className="max-w-4xl mx-auto md:flex">
@@ -23,7 +23,7 @@ const ServicePrice = () => {
                 </h2>
                 <h3 className="text-center font-bold text-4xl mb-5">25€/H </h3>
                 <p className="text-center text-lg">
-                  Je vous aide à l'agencement de votre projet{" "}
+                  Je vous aide à l&#39;agencement de votre projet{" "}
                 </p>
               </div>
               <div className="w-full">
@@ -42,8 +42,8 @@ const ServicePrice = () => {
                 </h3>
 
                 <p className="text-center text-lg">
-                  Je m'occupe entièrement de vos travaux, vous ne vous occupez
-                  de rien :)
+                  Je m&#39;occupe entièrement de vos travaux, vous ne vous
+                  occupez de rien :)
                 </p>
               </div>
               <div className="w-full">
@@ -60,7 +60,7 @@ const ServicePrice = () => {
                 <h3 className="text-center font-bold text-4xl mb-5">35/h</h3>
                 <p className="text-center text-lg">
                   Je vous aide à la réalisation de vos travaux, de la commande à
-                  l'installation chez vous.
+                  l&#39;installation chez vous.
                 </p>
               </div>
               <div className="w-full">

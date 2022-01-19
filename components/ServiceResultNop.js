@@ -48,7 +48,7 @@ const ServiceResult = (props) => {
 
           <div className="mt-4 flex justify-center">
             <button className="py-2 text-ml uppercase font-bold w-2/4  text-center text-one bg-four rounded-lg hover:bg-three focus:ring-4 focus:ring-blue-300 ">
-              Plus d'information
+              Plus d&#39;information
             </button>
           </div>
         </div>
