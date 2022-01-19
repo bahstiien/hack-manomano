@@ -36,7 +36,7 @@ const ServiceResult = (props) => {
                 src={SmallLogo}
                 width="20px"
                 height="20px"
-                classNameName="rounded-xl"
+                className="rounded-xl"
                 alt="profil"
               />
             </div>
