@@ -1,17 +1,18 @@
 import React from "react";
 import rating1 from "../public/worker/rating1.jpg";
+import Image from "next/image";
 
 const ServiceRating = () => {
   return (
     <div>
       <h1 className="text-4xl md:text-6xl text-one font-bold mb-5">
-        Ils m'ont fait confiance
+        Ils m&#39;ont fait confiance
       </h1>
       <div className="flex items-start">
         <div className="flex-shrink-0">
           <div className="inline-block relative">
             <div className="relative w-16 h-16 rounded-full overflow-hidden">
-              <img
+              <Image
                 className="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover"
                 src={rating1}
                 alt="Profile picture"
