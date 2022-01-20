@@ -53,3 +53,7 @@
   background-color: var(--quarternaryColor);
   color: var(--mainColor);
 }
+
+.pushFooter {
+  margin-bottom: 80vh;
+}
