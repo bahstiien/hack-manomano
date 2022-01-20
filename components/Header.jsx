@@ -5,16 +5,16 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header>
+    <header className="bg-white flex items-center justify-center uppercase">
       <div className={style.logo}>
-        <Image src={logo} width="307px" height="205px" alt="logo" />
+        <Link passHref href="/">
+          <a>
+            <Image src={logo} width="307px" height="205px" alt="logo" />
+          </a>
+        </Link>
       </div>
       <nav className={style.menu}>
-        <Link passHref href="/">
-          <a>Accueil</a>
-        </Link>
-
-        <Link passHref href="/utilisateurs">
+        <Link passHref href="/users">
           <a>Utilisateurs</a>
         </Link>
         <Link href="/pro">
@@ -23,7 +23,7 @@ export default function Header() {
         <Link href="/service">
           <a>Services</a>
         </Link>
-        <Link passHref href="/forum">
+        <Link passHref href="/service/forum">
           <a>Forum</a>
         </Link>
       </nav>
