@@ -14,7 +14,7 @@ export default function DashboardArtisan() {
             <div className={style.linkDashboard}>GESTION CALENDRIER</div>
           </Link>
           <Link passHref href="/pro/gestion/tarifs">
-            <div className={style.linkDashboard}>GESTION TARIFS</div>
+            <div className={style.linkDashboard}>GESTION TARIFS / DEVIS</div>
           </Link>
           <Link passHref href="/pro/gestion/realisations">
             <div className={style.linkDashboard}>MES REALISATION </div>

@@ -7,7 +7,6 @@ export default function CalendarPro() {
     <>
       <Layout>
         <DashboardArtisan />
-        <ServiceCalendar />
       </Layout>
     </>
   );
