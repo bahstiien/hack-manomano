@@ -6,6 +6,9 @@ import image2 from "../public/image-02.jpeg";
 import image3 from "../public/image-03.jpeg";
 import pub from "../public/images/pub.jpg";
 import ReactPlayer from "react-player/youtube";
+import work from "../public/worker/work.png";
+import idea from "../public/worker/idea.png";
+import question from "../public/worker/question.png";
 
 export default function Home() {
   return (
@@ -39,141 +42,46 @@ export default function Home() {
                 pip={false}
               />
             </div>
+            <div>
+              <div className="flex flex-row justify-center items-center mt-12 mb-12">
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                  <div className="font-second text-5xl mx-2 text-center">
+                    <h1 className="uppercase"> Un projet ? </h1>
+                    <p className=" text-2xl">
+                      Les artisans ManoMano sont là pour vous{" "}
+                    </p>
+                  </div>
+                  <div className="m-2">
+                    <Image src={work} alt="worker" />
+                  </div>
+                </div>
 
-            <div className="flex flex-wrap -mx-4">
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-white rounded-lg overflow-hidden mb-10">
-                  <Image src={image1} alt="image1" className="w-full" />
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                  <div className="font-second text-5xl mx-2 text-center">
+                    <h1 className="uppercase"> Une idée </h1>
+                    <p className=" text-2xl">Inspirez vous</p>
+                  </div>
+                  <div className="m-2">
+                    <Image src={idea} alt="worker" />
+                  </div>
+                </div>
 
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a
-                        href="javascript:void(0)"
-                        className="
-                        font-semibold
-                        text-dark text-xl
-                        sm:text-[22px]
-                        md:text-xl
-                        lg:text-[22px]
-                        xl:text-xl
-                        2xl:text-[22px]
-                        mb-4
-                        block
-                        hover:text-primary
-                        "
-                      >
-                        Mano Mano services
-                      </a>
-                    </h3>
-                    <p className="text-base text-body-color leading-relaxed mb-7">
-                      Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                      elit. Lorem consectetur adipiscing elit.
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                  <div className="font-second text-5xl mx-2 text-center">
+                    <h1 className="uppercase"> Une question</h1>
+                    <p className=" text-2xl">
+                      La communauté répond à vos questions
                     </p>
-                    <a
-                      href="javascript:void(0)"
-                      className="
-                     inline-block
-                     py-2
-                     px-7
-                     border border-[#E5E7EB]
-                     rounded-full
-                     text-base text-body-color
-                     font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
-                     transition
-                     "
-                    ></a>
+                  </div>
+                  <div className="m-2">
+                    <Image src={question} alt="worker" />
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-white rounded-lg overflow-hidden mb-10">
-                  <Image src={image2} alt="image2" className="w-full" />
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a
-                        href="javascript:void(0)"
-                        className="
-                        font-semibold
-                        text-dark text-xl
-                        sm:text-[22px]
-                        md:text-xl
-                        lg:text-[22px]
-                        xl:text-xl
-                        2xl:text-[22px]
-                        mb-4
-                        block
-                        hover:text-primary
-                        "
-                      >
-                        Mes projets
-                      </a>
-                    </h3>
-                    <p className="text-base text-body-color leading-relaxed mb-7">
-                      Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                      elit. Lorem consectetur adipiscing elit.
-                    </p>
-                    <a
-                      href="javascript:void(0)"
-                      className="
-                     inline-block
-                     py-2
-                     px-7
-                     border border-[#E5E7EB]
-                     rounded-full
-                     text-base text-body-color
-                     font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
-                     transition
-                     "
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 xl:w-1/3 px-4">
-                <div className="bg-white rounded-lg overflow-hidden mb-10">
-                  <Image src={image3} alt="image" className="w-full" />
-                  <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
-                    <h3>
-                      <a
-                        href="javascript:void(0)"
-                        className="
-                        font-semibold
-                        text-dark text-xl
-                        sm:text-[22px]
-                        md:text-xl
-                        lg:text-[22px]
-                        xl:text-xl
-                        2xl:text-[22px]
-                        mb-4
-                        block
-                        hover:text-primary
-                        "
-                      >
-                        Espace Pro
-                      </a>
-                    </h3>
-                    <p className="text-base text-body-color leading-relaxed mb-7">
-                      Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                      elit. Lorem consectetur adipiscing elit.
-                    </p>
-                    <a
-                      href="javascript:void(0)"
-                      className="
-                     inline-block
-                     py-2
-                     px-7
-                     border border-[#E5E7EB]
-                     rounded-full
-                     text-base text-body-color
-                     font-medium
-                     hover:border-primary hover:bg-primary hover:text-white
-                     transition
-                     "
-                    ></a>
-                  </div>
-                </div>
-              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <Image src={pub} alt="pub" className="w-full rounded-3xl mb-8" />
             </div>
           </div>
         </section>

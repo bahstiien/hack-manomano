@@ -9,18 +9,17 @@ import style from "../styles/Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={style.footerContainer}>
-      <div className="copyright">
+    <footer className="flex justify-center flex-col mt-36">
+      <div className="justify center">
         <p> ©2022 ManoMano </p>
       </div>
-      <nav className="">
+      <nav className="flex flex-row text-md justify-between">
         <Link href="/contact">
-          <a>Contact</a>
+          <a className="mx-4">Contact</a>
         </Link>
-        <h2>
-          Rejoignez-nous <br />
-          La magie de l&#39;internet mondial !
-        </h2>
+        <div className="flex flex-col ml-12">
+          <span>Rejoignez-nous dans la magie de l&#39;internet mondial !</span>
+        </div>
         <div className="flex justify-end">
           <div className="mx-2">
             <Image
