@@ -14,10 +14,10 @@ export default function Header() {
         <Link href="/utilisateurs">
           <a>Utilisateurs</a>
         </Link>
-        <Link href="/professionnels">
+        <Link href="/pro">
           <a>Professionnels</a>
         </Link>
-        <Link href="/services">
+        <Link href="/service">
           <a>Services</a>
         </Link>
       </nav>
