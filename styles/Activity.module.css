@@ -1,0 +1,55 @@
+.pageContainer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlePageUpdate {
+  text-align: center;
+  margin: 40px auto 1px auto;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--mainColor);
+}
+.priceInputForm {
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  padding-left: 10px;
+  cursor: pointer;
+  color: var(--mainColor);
+}
+.descriptionInput {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  padding-left: 10px;
+  cursor: pointer;
+  color: var(--mainColor);
+  padding: 10px;
+}
+
+.linkBecomeArtisan {
+  margin: 1em auto;
+  color: var(--accentColor);
+  display: flex;
+  justify-content: center;
+  min-width: 90px;
+  width: 50%;
+  background-color: var(--mainColor);
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.linkBecomeArtisan:hover,
+.linkBecomeArtisan:focus {
+  background-color: var(--quarternaryColor);
+  color: var(--mainColor);
+}

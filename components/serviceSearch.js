@@ -32,15 +32,6 @@ const ServiceSearch = () => {
           <span className="text-gray-100 m-2">Artisan labéllisé ManoMano</span>
         </button>
       </div>
-
-      {/* <span> 0 </span>
-      <input type="range" min="0" max="50" />
-      <span> 50 km </span> */}
-      <div className="flex justify-center">
-        <button className="flew-row p-4 w-2/5 m-8 bg-four rounded-xl shadow-xl">
-          Lancez la recherche
-        </button>
-      </div>
     </div>
   );
 };

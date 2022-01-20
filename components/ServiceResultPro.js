@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SmallLogo from "../public/smallLogo.jpeg";
+import Link from "next/link";
 
-const ServiceResult = (props) => {
+const ServiceResultPro = (props) => {
   return (
     <div className="flex flex-col justify-center m-4">
       <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
@@ -31,6 +32,15 @@ const ServiceResult = (props) => {
                 </span>
               </p>
             </div>
+            <div className="bg-six px-3 py-1 flex items-center justify-center rounded-full text-xs font-medium text-gray-800 hidden md:block ">
+              <Image
+                src={SmallLogo}
+                width="20px"
+                height="20px"
+                className="rounded-xl"
+                alt="profil"
+              />
+            </div>
           </div>
           <h3 className="font-black text-gray-800 md:text-3xl text-xl">
             {props.name}
@@ -41,18 +51,17 @@ const ServiceResult = (props) => {
           <p className="text-ml italic m-6 text-gray-500 mb-12">
             {props.description}
           </p>
-
-          <div className="mt-12 mb-12">
-            <p className="text-xl font-black text-one mt-12">
-              Prestation à partir de {props.price}€
-              <span className="font-normal text-gray-600 text-base">/h</span>
-            </p>
-          </div>
+          <p className="text-xl font-black text-one ">
+            Prestation à partir de {props.price}€
+            <span className="font-normal text-gray-600 text-base">/h</span>
+          </p>
 
           <div className="mt-4 flex justify-center">
-            <button className="py-2 mt-8 text-ml uppercase font-bold w-2/4 text-one text-center bg-four rounded-lg hover:bg-three hover:text-five focus:ring-4 focus:ring-blue-300 ">
-              Plus d&#39;information
-            </button>
+            <Link passHref href="/service/details">
+              <button className="py-2 text-ml uppercase font-bold w-2/4  text-center text-one bg-four rounded-lg hover:bg-three focus:ring-4 focus:ring-blue-300 ">
+                Plus d&#39;information
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -60,4 +69,4 @@ const ServiceResult = (props) => {
   );
 };
 
-export default ServiceResult;
+export default ServiceResultPro;

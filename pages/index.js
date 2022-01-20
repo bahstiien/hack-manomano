@@ -1,7 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
-// import logo from "../public/logoManoMano.png";
 import image1 from "../public/image-01.jpeg";
 import image2 from "../public/image-02.jpeg";
 import image3 from "../public/image-03.jpeg";
@@ -10,10 +8,6 @@ export default function Home() {
   return (
     <Layout pageTitle="Mano Mano la communauté">
       <div>
-        {/* <div className={styles.container}>
-          <Image className="" src={logo} alt="logo" layout="responsive" />
-        </div> */}
-
         <link
           rel="stylesheet"
           href="https://cdn.tailgrids.com/tailgrids-fallback.css"

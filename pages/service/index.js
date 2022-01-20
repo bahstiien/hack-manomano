@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import ServiceResult from "../../components/ServiceResult";
 import ServiceResultNop from "../../components/ServiceResultNop";
 import ServiceSearch from "../../components/serviceSearch";
@@ -12,13 +13,26 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 
 const service = () => {
+  const [isActiveBtn, setActiveBtn] = useState("true");
+  const handleToggle = () => {
+    setActiveBtn(!isActiveBtn);
+  };
   return (
     <Layout>
       <div className="mb-24">
         <h1 className="text-five"> Service </h1>
         <ServiceSearch />
-
-        <div className="flex justify-around flex-wrap">
+        <div className="flex justify-center">
+          <button
+            className="flew-row p-4 w-2/5 m-8 bg-four rounded-xl shadow-xl"
+            onClick={handleToggle}
+          >
+            Lancez la recherche
+          </button>
+        </div>
+        <div
+          className={isActiveBtn ? "hidden" : "flex justify-around flex-wrap"}
+        >
           <ServiceResult
             activity="Plomberie"
             img={pax1}
