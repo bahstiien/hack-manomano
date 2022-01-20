@@ -97,7 +97,7 @@ export default function Index() {
                       </p>
                     </>
                   }
-                  price={cart.price}
+                  price={`${cart.price}€`}
                 />
               </>
             );
