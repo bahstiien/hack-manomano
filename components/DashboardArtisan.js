@@ -8,7 +8,7 @@ export default function DashboardArtisan() {
         <h1 className={style.titleDashboard}> Tableau de bord </h1>
         <div className={style.navLinkDashboard}>
           <Link passHref href="/pro/gestion/activite">
-            <div className={style.linkDashboard}>DETAILS DE MON ACTIVITE</div>
+            <div className={style.linkDashboard}>MODIFIER SON PROFIL</div>
           </Link>
           <Link passHref href="/pro/gestion/calendrier">
             <div className={style.linkDashboard}>GESTION CALENDRIER</div>
