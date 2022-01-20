@@ -23,22 +23,30 @@ export default function Index() {
     {
       name: "pommeau",
       price: 128,
+      img:"/users/douche.webp",
+      description:"Bac à douche en acrylique bordé blanc brillant mod",
     },
     {
       name: "bac a douche",
       price: 238,
+      img:"/users/robineteries.jpg",
+      description:"Bac à douche",
+
     },
     {
       name: "Robineterie",
       price: 56,
+      img:"/users/Exterieur.png",
+      description:"Bac à douche en acrylique",
+
     },
   ];
 
   return (
     <>
-      <div className="flex justify-between mt-36 border-b-4 border-black ">
+      <div className="flex mt-36">
         <BackBtn content="Retour" url="/users" />
-        <div className="shoping mx-6 cursor-pointer flex ">
+        <div className="mx-6 flex ">
           <IconButton
             className="flex items-center justify-center"
             aria-label="cart"
@@ -49,7 +57,7 @@ export default function Index() {
             </StyledBadge>
           </IconButton>
         </div>
-        <div className="push mx-6 cursor-pointer flex">
+        <div className="flex ml-10">
           <IconButton
             className="flex items-center justify-center"
             aria-label="cart"
@@ -59,14 +67,14 @@ export default function Index() {
           </IconButton>
         </div>
       </div>
-      <div className="flex mt-12 items-center justify-center flex-col gap-5 px-10 ">
-        <ul className="gap-5 flex flex-col overflow-hidden mb-10 w-full">
+      <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto ">
+        <ul className="gap-5 flex flex-col overflow-hidden mt-10">
           {cart1.map((cart) => {
             return (
               <>
                 <CardUsers
-                  src={robineterie}
-                  typo1="Bac à douche en acrylique bordé blanc brillant mod. Flower 80X90X4 rectangulaire"
+                  src={cart.img}
+                  typo1={cart.description}
                   countPlus={
                     <>
                       <p

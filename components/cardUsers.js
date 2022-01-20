@@ -27,7 +27,7 @@ export default function CardUsers({ src, alt, typo1, countPlus, price }) {
             alt={alt}
             width="150"
             height="150"
-            property="responsive"
+            layout="fixed"
           />
           <div className="flex flex-col items-center justify-center">
             <Typography>
