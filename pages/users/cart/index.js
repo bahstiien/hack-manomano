@@ -2,7 +2,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PushPinIcon from "@mui/icons-material/PushPin";
 import Router from "next/router";
 import CardUsers from "../../../components/cardUsers";
-import robineterie from "../../../public/users/robineteries.jpg";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
