@@ -1,12 +1,12 @@
 import Layout from "../../../components/Layout";
 import DashboardArtisan from "../../../components/DashboardArtisan";
 
-export default function DashboardPro() {
+export default function CalendarPro() {
   return (
     <>
       <Layout>
         <DashboardArtisan />
-        <div></div>
+        <div>CAE_LENDARRRRRRRRRRRRRR</div>
       </Layout>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SmallLogo from "../public/smallLogo.jpeg";
+import Link from "next/link";
 
 const ServiceResult = (props) => {
   return (
@@ -56,9 +57,11 @@ const ServiceResult = (props) => {
           </p>
 
           <div className="mt-4 flex justify-center">
-            <button className="py-2 text-ml uppercase font-bold w-2/4  text-center text-one bg-four rounded-lg hover:bg-three focus:ring-4 focus:ring-blue-300 ">
-              Plus d&#39;information
-            </button>
+            <Link passHref href="/service/details">
+              <button className="py-2 text-ml uppercase font-bold w-2/4  text-center text-one bg-four rounded-lg hover:bg-three focus:ring-4 focus:ring-blue-300 ">
+                Plus d&#39;information
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,10 +5,11 @@ import pinterest from "../public/pinterest.png";
 import instagram from "../public/instagram.png";
 import blogger from "../public/blogger.png";
 import Image from "next/image";
+import style from "../styles/Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={style.footerContainer}>
       <div className="copyright">
         <p> ©2022 ManoMano </p>
       </div>

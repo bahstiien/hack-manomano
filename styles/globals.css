@@ -5,6 +5,8 @@
 footer {
   color: #ebf2f4;
   background-color: #182a4b;
+  text-align: justify;
+  padding: 15px;
 }
 
 header {
@@ -13,17 +15,11 @@ header {
   background-color: #ebf2f4;
 }
 
-footer {
-  text-align: justify;
-  padding: 15px;
-  margin-top: 50px;
-}
-
 nav a:hover {
   color: var(--quarternaryColor);
 }
 
-h1 {
+/* h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   justify-items: center;
@@ -35,7 +31,7 @@ h2 {
   justify-items: right;
   font-size: 1rem;
   margin-bottom: 10px;
-}
+} */
 
 :root {
   --mainColor: #182a4b;
@@ -104,7 +100,4 @@ h5 {
 
 ul.control-dots {
   z-index: 0;
-}
-
-.leaflet-popup-content-wrapper {
 }

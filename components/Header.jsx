@@ -17,10 +17,10 @@ export default function Header() {
         <Link passHref href="/utilisateurs">
           <a>Utilisateurs</a>
         </Link>
-        <Link passHref href="/professionnels">
+        <Link href="/pro">
           <a>Professionnels</a>
         </Link>
-        <Link passHref href="/services">
+        <Link href="/service">
           <a>Services</a>
         </Link>
         <Link passHref href="/forum">
