@@ -1,12 +1,12 @@
 import Layout from "../../../components/Layout";
 import DashboardArtisan from "../../../components/DashboardArtisan";
 
-export default function DashboardPro() {
+export default function Activité() {
   return (
     <>
       <Layout>
         <DashboardArtisan />
-        <div></div>
+        TESTE TETETESTEZRFERZGEZFRE
       </Layout>
     </>
   );

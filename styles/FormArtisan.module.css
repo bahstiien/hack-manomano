@@ -74,6 +74,7 @@
   overflow: hidden;
   transition: 0.5s;
 }
+
 .btnSubmitForm:hover,
 .btnSubmitForm:focus {
   background-color: var(--quarternaryColor);

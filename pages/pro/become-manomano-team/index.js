@@ -26,6 +26,26 @@ export default function FormArtisan() {
             />
           </div>
         </div>
+
+        <div className={style.fullNameContainer}>
+          <div className={style.nameContainer}>
+            <h3 className={style.inputTitleForm}>activité</h3>
+            <input
+              type="text"
+              className={style.nameInputForm}
+              autoComplete="off"
+            />
+          </div>
+          <div className={style.nameContainer}>
+            <h3 className={style.inputTitleForm}>Localisation</h3>
+            <input
+              type="text"
+              className={style.nameInputForm}
+              autoComplete="off"
+            />
+          </div>
+        </div>
+
         <div className={style.descriptionContainer}>
           <h3 className={style.inputTitleForm}>Decription</h3>
           <textarea
