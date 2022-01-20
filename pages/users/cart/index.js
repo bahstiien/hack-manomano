@@ -22,15 +22,19 @@ export default function index() {
         <CardUsers
           src={robineterie}
           typo1="Bac à douche en acrylique bordé blanc brillant mod. Flower 80X90X4 rectangulaire"
-          className="border-black border-2"
+          price={238}
+
         />
         <CardUsers
           src={douche}
           typo1="Bac à douche en acrylique bordé blanc brillant mod. Flower 80X90X4 rectangulaire"
+          price={238}
         />
         <CardUsers
           src={robineterie}
           typo1="Bac à douche en acrylique bordé blanc brillant mod. Flower 80X90X4 rectangulaire"
+          price={238}
+
         />
       </div>
     </>

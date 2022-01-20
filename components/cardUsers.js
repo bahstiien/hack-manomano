@@ -17,7 +17,7 @@ const bull = (
   </Box>
 );
 
-export default function CardUsers({ src, alt, typo1, typo2 }) {
+export default function CardUsers({ src, alt, typo1, price }) {
   const [count, setCount] = useState(0);
 
   const cart1 = [
@@ -32,17 +32,12 @@ export default function CardUsers({ src, alt, typo1, typo2 }) {
     {
       name: "Robineterie",
       price: 56,
-    }
+    },
   ];
   return (
     <Card sx={{ minWidth: 370 }}>
       <CardContent className="columns-2">
-        <ul>
-          
-        </ul>
-        {cart1.map((cart) => {
-
-        })}
+        {cart1.map((cart) => {})}
         <Image
           src={src}
           alt={alt}
@@ -58,12 +53,21 @@ export default function CardUsers({ src, alt, typo1, typo2 }) {
         <Typography
           variant="h5"
           component="div"
-          className="border-black border-2 flex w-32 justify-between items-center px-2 cursor-pointer mb-12"
+          className="border-black border-4 flex w-32 justify-between items-center px-4 mb-12"
         >
-          <p onClick={() => setCount(count + 1)}> +</p>
+          <p className="text-xl font-bold cursor-pointer" onClick={() => setCount(count + 1)}>
+            {" "}
+            +
+          </p>
           {count}
 
-          <p onClick={() => setCount(count - 1)}> -</p>
+          <p className="text-xl font-bold cursor-pointer" onClick={() => setCount(count - 1)}>
+            {" "}
+            -
+          </p>
+        </Typography>
+        <Typography className="font-bold text-2xl text-red-700">
+          <p>{price}</p>
         </Typography>
       </CardContent>
     </Card>
