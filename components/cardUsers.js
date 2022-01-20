@@ -20,9 +20,29 @@ const bull = (
 export default function CardUsers({ src, alt, typo1, typo2 }) {
   const [count, setCount] = useState(0);
 
+  const cart1 = [
+    {
+      name: "pommeau",
+      price: 128,
+    },
+    {
+      name: "bac a douche",
+      price: 238,
+    },
+    {
+      name: "Robineterie",
+      price: 56,
+    }
+  ];
   return (
     <Card sx={{ minWidth: 370 }}>
       <CardContent className="columns-2">
+        <ul>
+          
+        </ul>
+        {cart1.map((cart) => {
+
+        })}
         <Image
           src={src}
           alt={alt}
@@ -30,6 +50,11 @@ export default function CardUsers({ src, alt, typo1, typo2 }) {
           height="150"
           property="responsive"
         />
+        <Typography>
+          <div className="py-6">
+            <p className="text-xs">{typo1}</p>
+          </div>
+        </Typography>
         <Typography
           variant="h5"
           component="div"
@@ -39,11 +64,6 @@ export default function CardUsers({ src, alt, typo1, typo2 }) {
           {count}
 
           <p onClick={() => setCount(count - 1)}> -</p>
-        </Typography>
-        <Typography>
-          <div className="mt-4">
-            <p className="text-xs">{typo1}</p>
-          </div>
         </Typography>
       </CardContent>
     </Card>
