@@ -1,17 +1,20 @@
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
-import Image from "next/image";
+import style from "../styles/Header.module.css";
 import logo from "../public/logoManoMano.png";
+import Image from "next/image";
 
 export default function Header() {
   return (
-    <header>
-      <nav className={styles.menu}>
-        <Link href="/">
-          <a>Accueil</a>
+    <header className="bg-white flex items-center justify-center uppercase">
+      <div className={style.logo}>
+        <Link passHref href="/">
+          <a>
+            <Image src={logo} width="307px" height="205px" alt="logo" />
+          </a>
         </Link>
-
-        <Link href="/utilisateurs">
+      </div>
+      <nav className={style.menu}>
+        <Link passHref href="/users">
           <a>Utilisateurs</a>
         </Link>
         <Link href="/pro">
@@ -19,6 +22,9 @@ export default function Header() {
         </Link>
         <Link href="/service">
           <a>Services</a>
+        </Link>
+        <Link passHref href="/service/forum">
+          <a>Forum</a>
         </Link>
       </nav>
     </header>

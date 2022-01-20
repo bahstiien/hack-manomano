@@ -1,5 +1,5 @@
 import style from "../styles/DevisModuleArtisan.module.css";
-import Link from "next/link";
+
 import Image from "next/image";
 import checkIcon from "../public/images/checkIcon.png";
 

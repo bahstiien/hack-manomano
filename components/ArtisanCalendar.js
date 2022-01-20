@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 export default function ArtisanCalendar() {
   return (
     <div>
-      <div className="h-screen bg-gray-50 p-6">
+      <div className="h-screen p-6">
         <div className="flex flex-col shadow-md justify-start md:justify-center rounded-lg overflow-x-scroll mx-auto py-4 px-2  md:mx-12">
           <div className="flex-row flex  justify-between">
             <div className="flex group hover:bg-three hover:shadow-lg hover-dark-shadow rounded-lg mx-1 transition-all	duration-300	 cursor-pointer justify-center w-16">

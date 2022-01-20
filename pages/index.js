@@ -1,20 +1,16 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import logo from "../public/logoManoMano.png";
 import image1 from "../public/image-01.jpeg";
 import image2 from "../public/image-02.jpeg";
 import image3 from "../public/image-03.jpeg";
-import ReactPlayer from "react-player";
+import pub from "../public/images/pub.jpg";
+import ReactPlayer from "react-player/youtube";
 
 export default function Home() {
   return (
     <Layout pageTitle="Mano Mano la communauté">
       <div>
-        <div className={styles.container}>
-          <Image className="" src={logo} alt="logo" layout="responsive" />
-        </div>
-
         <link
           rel="stylesheet"
           href="https://cdn.tailgrids.com/tailgrids-fallback.css"
@@ -29,8 +25,21 @@ export default function Home() {
             src="https://www.flexclip.com/embed/8e8b7d2755ae2e651a21e66c91ee39fb.html"
           />
         </div> */}
-        <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 bg-[#F3F4F6]">
+        <section>
           <div className="container">
+            <div className="flex justify-center mb-12">
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=dQqDSuoc5Lk"
+                className="react-player"
+                height="500px"
+                width="900px"
+                controls={false}
+                loop={true}
+                playing={true}
+                pip={false}
+              />
+            </div>
+
             <div className="flex flex-wrap -mx-4">
               <div className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <div className="bg-white rounded-lg overflow-hidden mb-10">
