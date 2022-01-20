@@ -6,6 +6,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AddIcon from "@mui/icons-material/Add";
 
 export default function MyProject() {
+
+
   return (
     <>
       <div className="flex justify-center items-center flex-col mt-12">
@@ -29,6 +31,7 @@ export default function MyProject() {
       </div>
       <div className="flex flex-col justify-center items-center mt-12 gap-5 mb-20 overflow-hidden ">
         <CardCreateProjet
+          onClick={() => Router.push("/users/createProject")}
           content="Un nouveau projet ?"
           image="/users/nouvelle.png"
           alt="image"

@@ -8,6 +8,7 @@ import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import BackBtn from "../../../components/BackBtn";
 import { useState } from "react";
+import CircularStatic from "../../../components/Loading";
 
 export default function Index() {
   const [count, setCount] = useState(0);
@@ -42,11 +43,16 @@ export default function Index() {
     },
   ];
 
+  if (!cart1) {
+    return <CircularStatic />
+  }
+
   return (
     <>
       <div className="flex mt-36">
         <BackBtn content="Retour" url="/users" />
         <div className="mx-6 flex ">
+        {!cart1 && <CircularStatic />}
           <IconButton
             className="flex items-center justify-center"
             aria-label="cart"
