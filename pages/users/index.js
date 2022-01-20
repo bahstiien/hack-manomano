@@ -8,8 +8,7 @@ import AddIcon from "@mui/icons-material/Add";
 export default function MyProject() {
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
-        <h1 className="my-10 font-bold">Mes Projets</h1>
+      <div className="flex justify-center items-center flex-col mt-12">
         <div className="mb-10">
           <BtnUsers
             icon={<AddIcon />}
