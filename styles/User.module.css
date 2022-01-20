@@ -7,7 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url(/images/fond3.jpg);
+  background: var(--mainColor);
+  background-position: center;
   box-shadow: -2px -2px 8px 4px rgba(43, 35, 37, 0.3);
 }
 .textTitlePagePro {
@@ -42,13 +43,25 @@
 }
 
 .questionClient {
-  font-size: 0.6em;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 600;
+  color: var(--mainColor);
 }
 
 .imageLink {
   width: 170px;
   height: 170px;
   cursor: pointer;
+}
+.linkForum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--quarternaryColor);
+  border-radius: 1em;
+  height: 100px;
 }
 
 .containerLinkPro {
@@ -74,6 +87,7 @@
   height: 150px;
   padding-top: 70px;
   margin-bottom: 100px;
+  margin-right: 40px;
 }
 
 /* link become*/
@@ -82,7 +96,7 @@
   color: var(--accentColor);
   min-width: 90px;
   width: 70%;
-  background-color: var(--mainColor);
+  background-color: orangered;
   font-size: 1rem;
   padding: 8px;
   border-radius: 1em;
@@ -93,7 +107,7 @@
 }
 .linkBecomeArtisan:hover,
 .linkBecomeArtisan:focus {
-  background-color: var(--quarternaryColor);
+  background-color: #ffb950;
   color: var(--mainColor);
 }
 
@@ -104,7 +118,7 @@
   color: var(--accentColor);
   min-width: 90px;
   width: 70%;
-  background-color: var(--secondaryColor);
+  background-color: #ffb950;
   font-size: 1rem;
   padding: 8px;
   border-radius: 1em;
@@ -115,7 +129,7 @@
 }
 .linkPersonalSpace:hover,
 .linkPersonalSpace:focus {
-  background-color: var(--quarternaryColor);
+  background-color: orangered;
   color: var(--mainColor);
 }
 

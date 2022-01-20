@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Presentation from "../../public/images/man.png";
-import ImagePro from "../../public/images/ManoPro.png";
+import bulle from "../../public/images/bulle.png";
+
 import Layout from "../../components/Layout";
 
 export default function PagePro() {
@@ -15,7 +16,7 @@ export default function PagePro() {
         <div className={style.infoContainerPagePro}>
           <div className={style.textContainerPagePro}>
             <p className={style.textTitlePagePro}>
-              Besoin d&apos;aide? La ManoManoCommunauté est la pour ça!
+              Besoin d&apos;aide? La ManoManoCommunauté est là pour ça!
             </p>
             <p className={style.paragraphPagePro}>
               Que ce soit pour vous aider à faire par vous même, ou qu&apos;un
@@ -35,27 +36,28 @@ export default function PagePro() {
         </div>
         <div className={style.containerWelcomePro}>
           <div className={style.containerLinkPro}>
-            <Link passHref href="/pro/become-manomano-team">
+            <Link passHref href="/users">
               <div className={style.linkBecomeArtisan}>
-                Devenez Artisan labelisé @ManoMano
+                Créer un nouveau projet
               </div>
             </Link>
-            <Link passHref href="/pro/gestion">
+            <Link passHref href="/users">
               <div className={style.linkPersonalSpace}>
-                Accèdez à votre espace de gestion
+                Accèdez à vos projets en cours
               </div>
             </Link>
           </div>
           <div className={style.returnPro}>
-            <h3 className={style.questionClient}>Pas encore de compte Pro?</h3>
+            <h3 className={style.questionClient}>
+              Besoin d&apos;aide? Vite sur le Forum!
+            </h3>
             <div className={style.imageLink}>
-              <Link passHref href="https://www.manomano.fr/pro" target="_blank">
+              <Link passHref href="/service/forum" target="_blank">
                 <a target="_blank">
-                  <Image
-                    src={ImagePro}
-                    layout="responsive"
-                    alt="image-travaux"
-                  />
+                  <div className={style.linkForum}>
+                    <Image src={bulle} height={60} width={60} alt="bulle" />
+                    <span>FORUM</span>
+                  </div>
                 </a>
               </Link>
             </div>
