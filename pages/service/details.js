@@ -54,7 +54,7 @@ const details = () => {
               </div>
             </div>
 
-            <div className=" flex justify-center flex-col bg-gray-50 mt-24">
+            <div className=" flex justify-center flex-col bg-gray-50 mt-24 sm:flex-row">
               <div>
                 <ServiceCalendar />
               </div>
