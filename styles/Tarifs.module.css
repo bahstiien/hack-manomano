@@ -1,0 +1,76 @@
+.tarifsInfoContainer {
+  width: 90%;
+  margin: 50px auto;
+  padding: 15px;
+  color: var(--mainColor);
+  text-align: center;
+}
+
+.infoTitleTarifs {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.infoTitleDevis {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.infoTextTarifs {
+  font-size: 0.6em;
+  margin-top: -3px;
+  margin-bottom: 13px;
+}
+
+.tarifInputContainer {
+  width: 100%;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: rgb(249 250 251);
+  box-shadow: -2px -2px 8px 4px rgba(43, 35, 37, 0.3);
+}
+
+.inputTitleForm {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 5px auto;
+}
+
+.priceInputForm {
+  text-align: right;
+  border-radius: 1em;
+  background: rgb(249 250 251);
+}
+
+.priceInputTextForm {
+  text-align: center;
+  border-radius: 1em;
+  background: rgb(249 250 251);
+}
+
+.validationBtnTarfis {
+  height: 90px;
+  width: 90px;
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  background: var(--mainColor);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  color: var(--accentColor);
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.validationBtnTarfis:hover,
+.validationBtnTarfis:focus {
+  background-color: var(--quarternaryColor);
+  color: var(--mainColor);
+}
