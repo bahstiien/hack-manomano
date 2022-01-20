@@ -35,16 +35,16 @@ export default function PagePro() {
         </div>
         <div className={style.containerWelcomePro}>
           <div className={style.containerLinkPro}>
-            <div className={style.linkBecomeArtisan}>
-              <Link passHref href="/pro/become-manomano-team">
+            <Link passHref href="/pro/become-manomano-team">
+              <div className={style.linkBecomeArtisan}>
                 Devenez Artisan labelisé @ManoMano
-              </Link>
-            </div>
-            <div className={style.linkPersonalSpace}>
-              <Link passHref href="/pro/gestion">
+              </div>
+            </Link>
+            <Link passHref href="/pro/gestion">
+              <div className={style.linkPersonalSpace}>
                 Accèdez à votre espace de gestion
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
           <div className={style.returnPro}>
             <h3 className={style.questionClient}>Pas encore de compte Pro?</h3>
