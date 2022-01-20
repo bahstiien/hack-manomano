@@ -14,7 +14,7 @@ export default function Header() {
         </Link>
       </div>
       <nav className={style.menu}>
-        <Link passHref href="/users">
+        <Link passHref href="/user">
           <a>Utilisateurs</a>
         </Link>
         <Link href="/pro">
