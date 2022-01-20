@@ -3,6 +3,7 @@ import DashboardArtisan from "../../../components/DashboardArtisan";
 import style from "../../../styles/Realisation.module.css";
 import Link from "next/link";
 import ProjectModuleArtisan from "../../../components/ProjectModulArtisan";
+import ServiceShowResult from "../../../components/ServiceShowResult";
 
 export default function Realisations() {
   return (
@@ -57,8 +58,10 @@ export default function Realisations() {
           </div>
 
           <div className={style.containerRealisation}>
+            <div className={style.ratingView}>
+              <ServiceShowResult />
+            </div>
             <ProjectModuleArtisan />
-            <div className={style.ratingView}></div>
           </div>
         </div>
       </Layout>
