@@ -1,5 +1,7 @@
-import React from 'react';
+
 
 export default function index() {
-  return <div>Create project</div>
+  return <div>
+  <h1>Crée un projets</h1>
+  </div>
 }
