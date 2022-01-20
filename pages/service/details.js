@@ -56,6 +56,9 @@ const details = () => {
 
             <div className=" flex justify-center flex-col bg-gray-50 mt-24 sm:flex-row">
               <div>
+                <h1 className="text-5xl font-second text-one font-bold mb-5">
+                  Echangeons sur votre projet
+                </h1>
                 <ServiceCalendar />
               </div>
               <div>
