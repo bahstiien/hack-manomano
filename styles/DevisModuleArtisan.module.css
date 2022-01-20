@@ -83,3 +83,23 @@
   font-size: 0.7em;
   margin: 0.2em auto;
 }
+@media only screen and (max-width: 480px) {
+  .th5 {
+    display: none;
+  }
+  .td5 {
+    display: none;
+  }
+  .th4 {
+    display: none;
+  }
+  .td4 {
+    display: none;
+  }
+  .th2 {
+    display: none;
+  }
+  .td2 {
+    display: none;
+  }
+}
