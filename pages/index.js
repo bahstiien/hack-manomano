@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import image1 from "../public/image-01.jpeg";
 import image2 from "../public/image-02.jpeg";
 import image3 from "../public/image-03.jpeg";
+import pub from "../public/images/pub.jpg";
+import Manomano from "../public/worker/Manomano.mp4";
 
 export default function Home() {
   return (
@@ -13,8 +15,17 @@ export default function Home() {
           href="https://cdn.tailgrids.com/tailgrids-fallback.css"
         />
 
-        <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 bg-[#F3F4F6]">
+        <section className=" lg:pt-[120px]lg:pb-20">
           <div className="container">
+            <div className="flex justify-center mb-12">
+              <Image
+                src={pub}
+                alt="image1"
+                className="w-full rounded-2xl m-8"
+              />
+            </div>
+
+            <video src={Manomano} width="320" height="240" controls />
             <div className="flex flex-wrap -mx-4">
               <div className="w-full md:w-1/2 xl:w-1/3 px-4">
                 <div className="bg-white rounded-lg overflow-hidden mb-10">
