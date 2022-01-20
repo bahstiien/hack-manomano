@@ -71,7 +71,7 @@
   justify-content: space-around;
   border-radius: 1em;
   width: 90%;
-  height: 150px;
+  height: 200px;
   margin: 15px auto;
   color: var(--accentColor);
   text-align: center;
@@ -130,6 +130,27 @@
 .linkPersonalSpace:hover,
 .linkPersonalSpace:focus {
   background-color: orangered;
+  color: var(--mainColor);
+}
+
+/* link personalArtisan*/
+.linkPersonalSpaceArtisan {
+  margin: 1em auto;
+  color: var(--accentColor);
+  min-width: 90px;
+  width: 70%;
+  background-color: var(--quarternaryColor);
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.linkPersonalSpaceArtisan:hover,
+.linkPersonalSpaceArtisan:focus {
+  background-color: var(--ternaryColor);
   color: var(--mainColor);
 }
 

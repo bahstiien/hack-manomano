@@ -36,7 +36,7 @@ export default function PagePro() {
         </div>
         <div className={style.containerWelcomePro}>
           <div className={style.containerLinkPro}>
-            <Link passHref href="/users">
+            <Link passHref href="/users/createProject">
               <div className={style.linkBecomeArtisan}>
                 Créer un nouveau projet
               </div>
@@ -44,6 +44,11 @@ export default function PagePro() {
             <Link passHref href="/users">
               <div className={style.linkPersonalSpace}>
                 Accèdez à vos projets en cours
+              </div>
+            </Link>
+            <Link passHref href="/service">
+              <div className={style.linkPersonalSpaceArtisan}>
+                Trouvez un artisan Labelisé @ManoManoCommunauté
               </div>
             </Link>
           </div>
