@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       main: ["Permanent Marker", "monospace"],
+      second: ["Dongle", "sans-serif"],
     },
 
     extend: {

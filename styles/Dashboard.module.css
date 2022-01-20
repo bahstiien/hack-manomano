@@ -3,15 +3,19 @@
   width: 90%;
   border-radius: 1em;
   padding: 25px;
-  background-image: url(/images/fond3.jpg);
+  background-image: url(/images/wall2.jpg);
   color: var(--accentColor);
   font-size: 1em;
   margin: 15px auto;
+  box-shadow: -2px -2px 8px 4px rgba(43, 35, 37, 0.3);
 }
 
 .titleDashboard {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--mainColor);
 }
 
 .navLinkDashboard {
@@ -28,7 +32,7 @@
   height: 90px;
   border: 2px solid var(--mainColor);
   border-radius: 1em;
-  background: var(--secondaryColor);
+  background: var(--mainColor);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -40,8 +44,8 @@
 
 .linkDashboard:hover,
 .linkDashboard:focus {
-  background-color: var(--tertiaryColor);
-  color: var(--mainColor);
+  background-color: var(--secondaryColor);
+  color: var(--accentColor);
 }
 .linkDashboard::before {
   content: "";

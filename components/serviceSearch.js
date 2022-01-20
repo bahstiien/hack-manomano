@@ -23,20 +23,13 @@ const ServiceSearch = () => {
 
       {/* -------- INPUT RECHERCHE VILLE*/}
       <div className=" flex justify-center items-center m-4">
-        <button className="flew-row p-4  bg-four rounded-xl shadow-xl">
-          <span> Me Geolocaliser </span>
+        <div className="border-2 h-12 w-96 p-6 mx-8  rounded-2xl flex justify-around bg-gray-50 items-center">
           <MyLocationIcon />
-        </button>
-
-        <span className="m-4"> OU </span>
-        <input
-          type="text"
-          className=" h-12 w-96 p-6 mx-8  rounded-2xl"
-          placeholder="Votre ville"
-        />
+          <input type="text" placeholder="Votre ville" />
+        </div>
         <button className="flew-row p-4  bg-six rounded-xl shadow-xl">
           <Image src={SmallLogo} width="20px" height="20px" alt="logo" />
-          <span className="text-gray-100 m-2">Partenaire Mano Mano</span>
+          <span className="text-gray-100 m-2">Artisan labéllisé ManoMano</span>
         </button>
       </div>
 
