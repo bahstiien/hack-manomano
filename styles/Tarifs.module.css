@@ -58,6 +58,7 @@
   border-radius: 1em;
   background: var(--mainColor);
   display: flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   padding: 5px;
@@ -73,4 +74,90 @@
 .validationBtnTarfis:focus {
   background-color: var(--quarternaryColor);
   color: var(--mainColor);
+}
+.devisInputContainer {
+  width: 100%;
+  border-radius: 1em;
+
+  padding: 10px;
+  background: rgb(249 250 251);
+  box-shadow: -2px -2px 8px 4px rgba(43, 35, 37, 0.3);
+}
+.devisContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.messageAndSend {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.textAreaForm {
+  border-radius: 1em;
+  color: var(--mainColor);
+  text-align: center;
+  resize: none;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  border: solid 1px var(--mainColor);
+}
+.littleDivNoName {
+  width: 80%;
+}
+
+.sendBtnTarfis {
+  height: 90px;
+  width: 90px;
+  margin-top: 1em;
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  background: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  color: var(--accentColor);
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.sendBtnTarfis:hover,
+.sendBtnTarfis:focus {
+  background-color: var(--quarternaryColor);
+  color: var(--mainColor);
+}
+.btnUploadDevis {
+  color: var(--accentColor);
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  background: var(--mainColor);
+  font-size: 0.8em;
+  font-weight: 600;
+  width: 100%;
+}
+@media only screen and (max-width: 870px) {
+  .tarifInputContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 10px;
+  }
+  .validationBtnTarfis {
+    height: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
 }
