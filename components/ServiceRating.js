@@ -1,13 +1,16 @@
 import React from "react";
 import rating1 from "../public/worker/rating1.jpg";
+<<<<<<< HEAD
 import rating2 from "../public/worker/rating2.jpg";
+=======
+>>>>>>> 8258dd369c7a59e38b63b500e3fb2cdf6a33a251
 import Image from "next/image";
 
 const ServiceRating = () => {
   return (
     <div>
       <h1 className="text-4xl md:text-6xl text-one font-bold mb-5">
-        Ils m'ont fait confiance
+        Ils m&#39;ont fait confiance
       </h1>
       <div className="flex items-start">
         <div className="flex-shrink-0">

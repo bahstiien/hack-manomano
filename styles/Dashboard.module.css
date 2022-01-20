@@ -1,0 +1,73 @@
+.dashboardContainer {
+  margin: 5px auto;
+  width: 90%;
+  border-radius: 1em;
+  padding: 25px;
+  background-image: url(/images/fond3.jpg);
+  color: var(--accentColor);
+  font-size: 1em;
+  margin: 15px auto;
+}
+
+.titleDashboard {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navLinkDashboard {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6em;
+  font-weight: 800;
+}
+
+.linkDashboard {
+  width: 90px;
+  height: 90px;
+  border: 2px solid var(--mainColor);
+  border-radius: 1em;
+  background: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.linkDashboard:hover,
+.linkDashboard:focus {
+  background-color: var(--tertiaryColor);
+  color: var(--mainColor);
+}
+.linkDashboard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accentColor),
+    transparent
+  );
+  transition: 0.5s;
+}
+.linkDashboard:hover::before {
+  left: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .navLinkDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+}
