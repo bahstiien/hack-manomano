@@ -36,7 +36,7 @@ export default function CardUsers({ src, alt, typo1, price }) {
   ];
   return (
     <>
-      <ul className="gap-5 flex flex-col">
+      <ul className="gap-5 flex flex-col overflow-hidden mb-10">
         {cart1.map((cart) => {
           return (
             <Card
@@ -61,7 +61,7 @@ export default function CardUsers({ src, alt, typo1, price }) {
                   <Typography
                     variant="h5"
                     component="div"
-                    className="border-black border-4
+                    className="border-black border-2
                      flex w-32 justify-between items-center px-4 mb-6"
                   >
                      <p
