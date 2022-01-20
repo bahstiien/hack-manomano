@@ -71,9 +71,9 @@ const service = () => {
           activity="Bricolage"
           note="3.7"
           nb="2"
-          name="Francis JointDeDouche"
-          city="CALLUIRE"
-          description="Je suis toujours sous l'eau mais j'aime mon travail et rendre service"
+          name="Francis De La Fuit'Do"
+          city="LYON 12e"
+          description="Je suis toujours sous l'eau mais j'aime mon travail et rendre service aux gens"
           price={"25"}
         />
       </div>
