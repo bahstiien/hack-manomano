@@ -8,7 +8,7 @@ const ServiceCalendar = () => {
       <h1 className="text-5xl font-second text-one font-bold mb-5">
         Echangeons sur votre projet
       </h1>
-      <div classNameName="h-screen bg-gray-100 p-6">
+      <div className="h-screen bg-gray-50 p-6">
         <div className="flex flex-col bg-white shadow-md justify-start md:justify-center rounded-lg overflow-x-scroll mx-auto py-4 px-2  md:mx-12">
           <div className="flex-row flex">
             <div className="flex group hover:bg-three hover:shadow-lg hover-dark-shadow rounded-lg mx-1 transition-all	duration-300	 cursor-pointer justify-center w-16">

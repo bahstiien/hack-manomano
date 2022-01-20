@@ -25,7 +25,7 @@ export default function App() {
           //   scrollbar={{
           //     hide: true,
           //   }}
-          className="h-auto"
+          className="h-96"
         >
           <SwiperSlide>
             <div className="flex items-start">

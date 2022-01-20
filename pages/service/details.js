@@ -62,7 +62,7 @@ const details = () => {
                 <ServicePrice />
               </div>
             </div>
-            <div className="bg-gray-50 h-auto flex justify-center">
+            <div className="bg-gray-50  flex justify-center">
               <ServiceRating />
             </div>
 
