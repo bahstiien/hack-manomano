@@ -1,13 +1,12 @@
 import React from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const ServiceCalendar = () => {
+export default function ArtisanCalendar() {
   return (
     <div>
       <div className="h-screen bg-gray-50 p-6">
-        <div className="flex flex-col bg-white shadow-md justify-start md:justify-center rounded-lg overflow-x-scroll mx-auto py-4 px-2  md:mx-12">
-          <div className="flex-row flex">
+        <div className="flex flex-col shadow-md justify-start md:justify-center rounded-lg overflow-x-scroll mx-auto py-4 px-2  md:mx-12">
+          <div className="flex-row flex  justify-between">
             <div className="flex group hover:bg-three hover:shadow-lg hover-dark-shadow rounded-lg mx-1 transition-all	duration-300	 cursor-pointer justify-center w-16">
               <div className="flex items-center px-4 py-4">
                 <div className="text-center">
@@ -107,29 +106,43 @@ const ServiceCalendar = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <p className="hover:bg-three hover:text-five w-1/4 h-10 flex justify-center items-center rounded-2xl text-xl m-2 cursor-pointer">
-              11: 00
-            </p>
-            <p className="hover:bg-three hover:text-five w-1/4 h-10 flex justify-center items-center rounded-2xl text-xl m-2 cursor-pointer">
-              11: 30{" "}
-            </p>
-            <p className="hover:bg-three hover:text-five w-1/4 h-10 flex justify-center items-center rounded-2xl text-xl m-2 cursor-pointer">
-              18: 15{" "}
-            </p>
-            <p className="hover:bg-three hover:text-five w-1/4 h-10 flex justify-center items-center rounded-2xl text-xl m-2 cursor-pointer">
-              19: 00{" "}
-            </p>
+          <div className="flex flex-col justify-start mt-8">
+            <div className=" w-3/4 h-10 flex rounded-2xl text-md m-2 cursor-pointer">
+              <p>
+                <span className="p-2 border-one border-2 rounded-2xl m-2">
+                  08: 00 <ArrowForwardIcon /> 11: 00
+                </span>
+                Aménagement de la cuisine de Paul - Secteur LYON 3 - DOSSIER
+                #271091
+              </p>
+            </div>
+            <div className=" w-3/4 h-10 flex justify-start rounded-2xl text-md m-2 cursor-pointer">
+              <p>
+                <span className="p-2 border-one border-2 rounded-2xl m-2">
+                  13: 30 <ArrowForwardIcon /> 15: 00
+                </span>
+                Suivi des travaux - Cuisine de Bruno - Secteur LYON 9 - DOSSIER
+                #060161
+              </p>
+            </div>
+
+            <div className=" w-3/4 h-10 flex justify-start rounded-2xl text-md m-2 cursor-pointer">
+              <p>
+                <span className="p-2 border-one border-2 rounded-2xl m-2">
+                  15: 15 <ArrowForwardIcon /> 18: 00
+                </span>
+                Réparation fuite WC - FRANCIS CASSOULET - Secteur LYON 2 -
+                DOSSIER #349557
+              </p>
+            </div>
           </div>
           <div className="flex justify-center">
             <button className="flew-row p-4 w-2/5 m-8 text-white font-second text-3xl bg-four rounded-xl shadow-xl">
-              Confirmez ce RDV
+              Modifiez vos disponibilités{" "}
             </button>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default ServiceCalendar;
+}
