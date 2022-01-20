@@ -52,14 +52,13 @@ const ServiceResultPro = (props) => {
             {props.description}
           </p>
           <p className="text-xl font-black text-one ">
-            Prestation à partir de {props.price}€
-            <span className="font-normal text-gray-600 text-base">/h</span>
+            .<span className="font-normal text-gray-600 text-base">.</span>
           </p>
 
           <div className="mt-4 flex justify-center">
             <Link passHref href="/service/details">
               <button className="py-2 text-ml uppercase font-bold w-2/4  text-center text-one bg-four rounded-lg hover:bg-three focus:ring-4 focus:ring-blue-300 ">
-                Plus d&#39;information
+                CHANGER PHOTO
               </button>
             </Link>
           </div>

@@ -1,6 +1,6 @@
 import Layout from "../../../components/Layout";
 import DashboardArtisan from "../../../components/DashboardArtisan";
-import ServiceResultPro from "../../../components/ServiceResult";
+import ServiceResultPro from "../../../components/ServiceResultPro";
 import pax4 from "../../../public/worker/pax4.jpg";
 import style from "../../../styles/Activity.module.css";
 import Link from "next/link";
