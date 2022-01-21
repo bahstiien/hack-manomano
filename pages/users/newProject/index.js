@@ -8,6 +8,9 @@ export default function index() {
       <div className="flex ">
         <BackBtn content="Retour" url="/users/createProject" />
       </div>
+      <div className="flex">
+        
+      </div>
       <div className="flex gap-5 justify-center items-center flex-col mt-10 md:flex-row md:gap-3 md:flex-wrap">
         <CardCreateProjet
           className=" shadow-2xl"

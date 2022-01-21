@@ -60,15 +60,6 @@ export default function Index() {
             </IconButton>
           </div>
         </div>
-        <div className="flex ">
-          {/* <IconButton
-            className="flex items-center justify-center"
-            aria-label="cart"
-          >
-            <PushPinIcon onClick={() => Router.push("/")} />
-            <p className="font-bold mr-2 mb">Mis de côté</p>
-          </IconButton> */}
-        </div>
       </div>
       <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto mt-0 ">
         <ul className="gap-5 flex flex-col overflow-hidden mt-10 lg:flex lg:flex-row">
