@@ -10,8 +10,6 @@ import { useState } from "react";
 import CircularStatic from "../../../components/Loading";
 
 export default function Index() {
-  const [count, setCount] = useState(0);
-
   const StyledBadge = styled(Badge)(({ theme }) => ({
     "& .MuiBadge-badge": {
       border: `2px solid ${theme.palette.background.paper}`,
@@ -23,80 +21,63 @@ export default function Index() {
     {
       name: "pommeau",
       price: 128,
-      img:"/users/douche.webp",
-      description:"Bac à douche en acrylique bordé blanc brillant mod",
+      img: "/users/douche.webp",
+      description: "Bac à douche en acrylique bordé blanc brillant mod",
     },
     {
       name: "bac a douche",
       price: 238,
-      img:"/users/robineteries.jpg",
-      description:"Bac à douche",
-
+      img: "/users/robineteries.jpg",
+      description:
+        "GROHE Grohtherm 800 Mitigeur thermostatique douche 1/2 avec ensemble de douche",
     },
     {
       name: "Robineterie",
-      price: 56,
-      img:"/users/Exterieur.png",
-      description:"Bac à douche en acrylique",
-
+      price: 13.91,
+      img: "/users/sillicone.webp",
+      description: "SILICONE CUISINES SALLES DE BAINS RATIO BL. 300 ml",
     },
   ];
 
   if (!cart1) {
-    return <CircularStatic />
+    return <CircularStatic />;
   }
 
   return (
     <>
-      <div className="flex mt-36">
-        <BackBtn content="Retour" url="/users" />
-        <div className="mx-6 flex ">
-        {!cart1 && <CircularStatic />}
-          <IconButton
-            className="flex items-center justify-center"
-            aria-label="cart"
-          >
-            <p className="font-bold mr-2 mb">panier</p>
-            <StyledBadge badgeContent={3} color="secondary">
-              <ShoppingCartIcon />
-            </StyledBadge>
-          </IconButton>
+      <div className="flex mt-28">
+        <div className="flex items-center">
+          <BackBtn content="Retour" url="/users" />
+          <div className="flex items-center ml-20">
+            {!cart1 && <CircularStatic />}
+            <IconButton
+              aria-label="cart"
+            >
+              <p className="font-bold mr-2 mb">panier</p>
+              <StyledBadge badgeContent={3} color="secondary">
+                <ShoppingCartIcon />
+              </StyledBadge>
+            </IconButton>
+          </div>
         </div>
-        <div className="flex ml-10">
-          <IconButton
+        <div className="flex ">
+          {/* <IconButton
             className="flex items-center justify-center"
             aria-label="cart"
           >
             <PushPinIcon onClick={() => Router.push("/")} />
             <p className="font-bold mr-2 mb">Mis de côté</p>
-          </IconButton>
+          </IconButton> */}
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto ">
-        <ul className="gap-5 flex flex-col overflow-hidden mt-10">
+      <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto mt-0 ">
+        <ul className="gap-5 flex flex-col overflow-hidden mt-10 lg:flex lg:flex-row">
           {cart1.map((cart) => {
             return (
               <>
                 <CardUsers
                   src={cart.img}
                   typo1={cart.description}
-                  countPlus={
-                    <>
-                      <p
-                        className="text-xl font-bold cursor-pointer"
-                        onClick={() => setCount(count - 1)}
-                      >
-                        -
-                      </p>
-                      {count}
-                      <p
-                        className="text-xl font-bold cursor-pointer"
-                        onClick={() => setCount(count + 1)}
-                      >
-                        +
-                      </p>
-                    </>
-                  }
                   price={`${cart.price}€`}
                 />
               </>
