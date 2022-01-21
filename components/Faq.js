@@ -14,7 +14,7 @@ const faq = () => {
         <section className="text-gray-700 flex ">
           <div className="">
             <div className="text-center mb-20">
-              <h3 className="text-8xl text-center text-one font-second mt-24 mb-24">
+              <h3 className="text-8xl text-center text-one font-second mt-4 mb-24">
                 Les questions de la communauté
               </h3>
             </div>
