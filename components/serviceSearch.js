@@ -12,7 +12,7 @@ const ServiceSearch = () => {
           {/* -------- INPUT RECHERCHE */}
           <input
             type="text"
-            className=" h-14 w-full p-6 rounded-2xl "
+            className=" h-14 w-full p-6 rounded-2xl bg-gray-50 "
             placeholder="Trouvez un artisan au meilleur prix près de chez vous"
           />
           <div className="mx-2">
@@ -25,7 +25,7 @@ const ServiceSearch = () => {
       <div className=" flex justify-center items-center m-4">
         <div className="border-2 h-12 w-96 p-6 mx-8  rounded-2xl flex justify-around bg-gray-50 items-center">
           <MyLocationIcon />
-          <input type="text" placeholder="Votre ville" />
+          <input type="text" placeholder="Votre ville" className="bg-gray-50" />
         </div>
         <button className="flew-row p-4  bg-six rounded-xl shadow-xl">
           <Image src={SmallLogo} width="20px" height="20px" alt="logo" />

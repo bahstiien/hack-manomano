@@ -19,8 +19,7 @@ const Service = () => {
   };
   return (
     <Layout>
-      <div className="mb-24">
-        <h1 className="text-five"> Service </h1>
+      <div className="mb-24 mt-8">
         <ServiceSearch />
         <div className="flex justify-center">
           <button

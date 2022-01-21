@@ -11,7 +11,7 @@ export default function PagePro() {
   return (
     <>
       <Layout>
-        <h1 className="text-five"> Bienvenue dans l&apos;espace pro </h1>
+        <div className="mt-24" />
 
         <div className={style.infoContainerPagePro}>
           <div className={style.textContainerPagePro}>

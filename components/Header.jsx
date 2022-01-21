@@ -6,6 +6,7 @@ import LogoPro from "../public/images/LogoPro.jpeg";
 import repair from "../public/worker/repair.png";
 import talk from "../public/worker/talk.png";
 import projet from "../public/worker/projet.png";
+import house from "../public/worker/house.png";
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
       <div className={style.logo}>
         <Link passHref href="/">
           <a>
-            <Image src={logo} width="307px" height="205px" alt="logo" />
+            <Image src={logo} width="257px" height="170px" alt="logo" />
           </a>
         </Link>
       </div>
@@ -21,7 +22,7 @@ export default function Header() {
         <Link passhref href="/users">
           <a className="flex flex-row justify-center items-center">
             <Image
-              src={projet}
+              src={house}
               width={50}
               height={50}
               alt="logo pro"
