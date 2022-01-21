@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+footer {
+  color: #ebf2f4;
+  background-color: #182a4b;
+  text-align: justify;
+  padding: 15px;
+}
+
+header {
+  margin-bottom: 50px;
+  color: #182a4b;
+  background-color: #ebf2f4;
+}
+
+nav a:hover {
+  color: var(--quarternaryColor);
+}
+
+/* h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  justify-items: center;
+}
+p {
+  text-align: center;
+}
+h2 {
+  justify-items: right;
+  font-size: 1rem;
+  margin-bottom: 10px;
+} */
+
 :root {
   --mainColor: #182a4b;
   --secondaryColor: #395a7d;
@@ -46,7 +77,8 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3 {
+h3,
+a {
   font-size: 1rem;
 }
 
@@ -68,7 +100,4 @@ h5 {
 
 ul.control-dots {
   z-index: 0;
-}
-
-.leaflet-popup-content-wrapper {
 }
