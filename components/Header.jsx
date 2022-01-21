@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
       </div>
       <nav className={style.menu}>
-        <Link passhref href="/user">
+        <Link passhref href="/users">
           <a className="flex flex-row justify-center items-center">
             <Image
               src={projet}

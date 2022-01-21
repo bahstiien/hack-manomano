@@ -20,15 +20,6 @@ export default function Home() {
           href="https://cdn.tailgrids.com/tailgrids-fallback.css"
         />
 
-        {/* <div className="flex justify-center">
-          <iframe
-            frameborder="0"
-            allow="autoplay; fullscreen;"
-            allowfullscreen
-            className="w-2/3 h-screen"
-            src="https://www.flexclip.com/embed/8e8b7d2755ae2e651a21e66c91ee39fb.html"
-          />
-        </div> */}
         <section>
           <div className="container">
             <div className="flex justify-center mb-12">
@@ -44,7 +35,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="flex flex-row justify-center items-center mt-12 mb-12">
+              <div className="flex flex-col  justify-center items-center mt-12 mb-12 md:flex-row">
                 <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-gray-200 hover:text-one ">
                   <div className="font-second text-5xl mx-2 text-center">
                     <h1 className="uppercase"> Un projet ? </h1>

@@ -54,7 +54,7 @@ const details = () => {
               </div>
             </div>
 
-            <div className=" flex justify-center flex-col bg-gray-50 mt-24 sm:flex-row">
+            <div className=" flex justify-center flex-col bg-gray-50 mt-24 sm:flex-col">
               <div>
                 <h1 className="text-5xl font-second text-one font-bold mb-5">
                   Echangeons sur votre projet
