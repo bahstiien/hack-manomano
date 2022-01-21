@@ -3,9 +3,11 @@ import BackBtn from "../../../components/BackBtn";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import BtnUsers from "../../../components/Btn";
 import Router from "next/router";
+import Layout from "../../../components/Layout";
 
 export default function index() {
   return (
+    <Layout>
     <>
       <div className="flex items-center justify-between">
         <div className="flex ">
@@ -48,6 +50,8 @@ export default function index() {
         </div>
         
       </div>
+      
     </>
+    </Layout>
   );
 }

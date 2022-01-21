@@ -1,9 +1,12 @@
 import CardCreateProjet from "../../../components/cardCreateProjet";
 import BackBtn from "../../../components/BackBtn";
 import Router from "next/router";
+import Layout from "../../../components/Layout";
 
 export default function index() {
   return (
+    <Layout>
+
     <div>
       <div className="flex ">
         <BackBtn content="Retour" url="/users/createProject" />
@@ -55,5 +58,7 @@ export default function index() {
         />
       </div>
     </div>
+    </Layout>
+
   );
 }
