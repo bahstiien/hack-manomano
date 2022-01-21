@@ -10,10 +10,10 @@ import style from "../styles/Footer.module.css";
 export default function Footer() {
   return (
     <footer className="flex justify-center flex-col mt-36">
-      <div className="justify center">
+      <div className="flex justify-center m-2">
         <p> ©2022 ManoMano </p>
       </div>
-      <nav className="flex flex-row text-md justify-between">
+      <nav className="flex flex-row text-md justify-around">
         <Link href="/contact">
           <a className="mx-4">Contact</a>
         </Link>

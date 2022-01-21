@@ -9,7 +9,7 @@ import projet from "../public/worker/projet.png";
 
 export default function Header() {
   return (
-    <header className="bg-white flex items-center justify-center uppercase">
+    <header className="bg-white flex flex-col items-center justify-center uppercase">
       <div className={style.logo}>
         <Link passHref href="/">
           <a>
