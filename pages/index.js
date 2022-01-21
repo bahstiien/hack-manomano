@@ -9,6 +9,7 @@ import ReactPlayer from "react-player/youtube";
 import work from "../public/worker/work.png";
 import idea from "../public/worker/idea.png";
 import question from "../public/worker/question.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
             </div>
             <div>
               <div className="flex flex-row justify-center items-center mt-12 mb-12">
-                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-gray-200 hover:text-one ">
                   <div className="font-second text-5xl mx-2 text-center">
                     <h1 className="uppercase"> Un projet ? </h1>
                     <p className=" text-2xl">
@@ -56,7 +57,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-gray-200 hover:text-one ">
                   <div className="font-second text-5xl mx-2 text-center">
                     <h1 className="uppercase"> Une idée </h1>
                     <p className=" text-2xl">Inspirez vous</p>
@@ -66,7 +67,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-three hover:text-white ">
+                <div className=" bg-gray-50 rounded-2xl shadow-2xl h-36 w-1/4 mb-8 flex justify-center items-center m-8 hover:bg-gray-200 hover:text-one ">
                   <div className="font-second text-5xl mx-2 text-center">
                     <h1 className="uppercase"> Une question</h1>
                     <p className=" text-2xl">
@@ -81,7 +82,19 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center">
-              <Image src={pub} alt="pub" className="w-full rounded-3xl mb-8" />
+              <Link
+                passHref
+                href="https://www.manomano.fr/co/tf/soldes-dhiver-691"
+                target="_blank"
+              >
+                <a target="_blank">
+                  <Image
+                    src={pub}
+                    alt="pub"
+                    className="w-full rounded-3xl mb-8"
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </section>
