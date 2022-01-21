@@ -6,9 +6,11 @@ import Presentation from "../../public/images/man.png";
 import bulle from "../../public/images/bulle.png";
 
 import Layout from "../../components/Layout";
+import DevisModuleArtisan from "../../components/DevisModuleArtisan";
 
 export default function PagePro() {
   return (
+<<<<<<< HEAD
     <>
       <Layout>
         <div className="mt-24" />
@@ -70,5 +72,24 @@ export default function PagePro() {
         </div>
       </Layout>
     </>
+=======
+    <Layout>
+      <div className="flex justify-center items-center flex-col mt-12">
+        <div className="mb-10">
+          <BtnUsers
+            icon={<AddIcon />}
+            className="cursor-pointer bg-three"
+            onClick={() => Router.push("users/createProject")}
+            content="Projet en cour"
+          />
+        </div>
+        <InputAutoComplete />
+        <div className="mt-12 w-full px-10 flex ">
+          <DevisModuleArtisan />
+        </div>
+        <main className="flex-grow-1" />
+      </div>
+    </Layout>
+>>>>>>> 6e948b6175adb97bfecefab512626cb09e1077e8
   );
 }
