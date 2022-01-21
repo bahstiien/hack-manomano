@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import BackBtn from "../../../components/BackBtn";
 import { useState } from "react";
 import CircularStatic from "../../../components/Loading";
+import Layout from "../../../components/Layout";
 
 export default function Index() {
   const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -45,37 +46,37 @@ export default function Index() {
 
   return (
     <>
-      <div className="flex mt-28">
-        <div className="flex items-center">
-          <BackBtn content="Retour" url="/users" />
-          <div className="flex items-center ml-20">
-            {!cart1 && <CircularStatic />}
-            <IconButton
-              aria-label="cart"
-            >
-              <p className="font-bold mr-2 mb">panier</p>
-              <StyledBadge badgeContent={3} color="secondary">
-                <ShoppingCartIcon />
-              </StyledBadge>
-            </IconButton>
+      <Layout>
+        <div className="flex mt-28">
+          <div className="flex items-center">
+            <BackBtn content="Retour" url="/users" />
+            <div className="flex items-center ml-20">
+              {!cart1 && <CircularStatic />}
+              <IconButton aria-label="cart">
+                <p className="font-bold mr-2 mb">panier</p>
+                <StyledBadge badgeContent={3} color="secondary">
+                  <ShoppingCartIcon />
+                </StyledBadge>
+              </IconButton>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto mt-0 ">
-        <ul className="gap-5 flex flex-col overflow-hidden mt-10 lg:flex lg:flex-row">
-          {cart1.map((cart) => {
-            return (
-              <>
-                <CardUsers
-                  src={cart.img}
-                  typo1={cart.description}
-                  price={`${cart.price}€`}
-                />
-              </>
-            );
-          })}
-        </ul>
-      </div>
+        <div className="flex items-center justify-center flex-col gap-5 px-10 border-t-4 w-[90%] border-black mx-auto mt-0 ">
+          <ul className="gap-5 flex flex-col overflow-hidden mt-10 lg:flex lg:flex-row">
+            {cart1.map((cart) => {
+              return (
+                <>
+                  <CardUsers
+                    src={cart.img}
+                    typo1={cart.description}
+                    price={`${cart.price}€`}
+                  />
+                </>
+              );
+            })}
+          </ul>
+        </div>
+      </Layout>
     </>
   );
 }

@@ -3,6 +3,7 @@ import InputAutoComplete from "../../components/inputAutoComplete";
 import AddIcon from "@mui/icons-material/Add";
 import BtnUsers from "../../components/Btn";
 import Layout from "../../components/Layout";
+import DevisModuleArtisan from "../../components/DevisModuleArtisan";
 
 export default function MyProject() {
   return (
@@ -13,11 +14,14 @@ export default function MyProject() {
             icon={<AddIcon />}
             className="cursor-pointer bg-three"
             onClick={() => Router.push("users/createProject")}
-            content="Créer un projet"
+            content="Projet en cour"
           />
         </div>
-
         <InputAutoComplete />
+        <div className="mt-12 w-full px-10 flex ">
+          <DevisModuleArtisan />
+        </div>
+        <main className="flex-grow-1" />
       </div>
     </Layout>
   );
