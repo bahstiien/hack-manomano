@@ -12,7 +12,7 @@ import pax6 from "../../public/worker/pax6.jpg";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 
-const service = () => {
+const Service = () => {
   const [isActiveBtn, setActiveBtn] = useState("true");
   const handleToggle = () => {
     setActiveBtn(!isActiveBtn);
@@ -101,4 +101,4 @@ const service = () => {
   );
 };
 
-export default service;
+export default Service;
