@@ -11,7 +11,7 @@ export default function contact() {
           <ProfileCardDemo src="matthew.png" typo1="Bastien LE CALVEZ" />
           <ProfileCardDemo src="jenny.jpg" typo1="Florence MARTN" />
           <ProfileCardDemo src="steve.jpg" typo1="Nicolas CHAVANOUD " />
-          <ProfileCardDemo src="elliot.jpg" typo1="Kalil BELGOUMR" />
+          <ProfileCardDemo src="elliot.jpg" typo1="Kalil BELGOUMRI" />
         </div>
       </div>
     </Layout>
